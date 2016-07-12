@@ -86,21 +86,21 @@ define(["jquery"],
                     $("#userWarning").hide();
                     $("#passwordWarning").hide();
 
+                    $("#forgot").hide();
+                    $("#emailSent").hide();
                     // eat the navigation
                 }
-
-
+                
                 if(_cont.loggedIn) {
                     // if you're logged in, you see this page coming up.
+                    $("#login").hide();
+                    $("#overview").show();
 
                 } else {
                     // and if you're not logged in, we present you this.
                     $("#menuItems").empty();
 
                     $("#overview").hide();
-                    $("#forgot").hide();
-                    $("#emailSent").hide();
-
                     $("#login").show();
                 }
             };
