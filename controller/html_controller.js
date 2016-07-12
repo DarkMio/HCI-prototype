@@ -10,23 +10,21 @@ define(["jquery"],
             this.loggedIn = false;
             var _cont = this;
 
-            // subsribe to all link clicks.
-            $("a").on('click', function(e) {
+            // subsribe to all link clicks and disable them (so we don't move somewhere else
+            $(document).on('click', 'a', function(e) {
                 e.preventDefault();
-                var href = $(this).attr('href');
+            });
 
-                if(href == "start") {
-                    reset();
-                }
-                console.log("RESOURCE: " + $(this).attr('href'))
+            $("#start").click(function(e) {
+                reset();
             });
             
             $("#buttonLogin").click(function(e) {
                 e.preventDefault();
-                console.log("LOGIN VALIDATION HERE");
                 if(formValidateLogin($("#inputUser"), $("#inputPassword"))) {
                     _cont.loggedIn = true;
                     buildNavigation();
+                    $("#siteTitle").text("Online Belegung");
                     $("#passwordWarning").hide();
                     $("#login").hide();
                     $("#overview").show();
@@ -53,11 +51,27 @@ define(["jquery"],
                     $("#userWarning").show();
                 }
             });
+            
+            $("#buttonSoSe2016").click(function(e) {
+                e.preventDefault();
+                $("#mainMenu").hide();
+                $("#plannerSoSe").show();
+            });
+
+            $("#buttonPlanner").click(function(e) {
+                e.preventDefault();
+                $("#mainMenu").hide();
+                $("#plannerSoSe").show();
+            });
+
 
             var reset = function() {
 
                 { // this is the block where we throw all dynamic structures in
                   // and disable everything in states we had before.
+                    $("#mainMenu").show();
+                    $("#plannerSoSe").hide();
+
                     $("#userWarning").hide();
                     $("#passwordWarning").hide();
 
@@ -92,7 +106,6 @@ define(["jquery"],
                     return;
                 }
 
-                console.log("BUILDING NAVIGATION");
                 var elements = [["Mein Konto", "account"], ["Belegung", "assignment"], ["Hilfe", "help"], ["Logout", "logout"]];
                 var menu = $("#menuItems");
 
@@ -113,7 +126,12 @@ define(["jquery"],
                     reset();
                 });
 
-                console.log("HTML Controller initialized.");
+                $("#assignment").click(function(e) {
+                    e.preventDefault();
+                    $("#mainMenu").hide();
+                    $("#plannerSoSe").show();
+                });
+
                 _cont.elementNavigation = true;
             };
         };

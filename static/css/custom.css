@@ -113,3 +113,78 @@ a {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
     outline: 0 none;
 }
+
+.list-group-item {
+    padding: 6px;
+    height: 107px;
+}
+
+.panel{
+    margin-bottom: 0;
+}
+
+.container-fluid {
+    background-color: #fff;
+    border-top: 5px solid #00a5a5;
+    margin-top: 40px;
+    padding-top: 1em;
+}
+
+.beer:hover {
+    -webkit-animation:rainbow 1s infinite;
+    -ms-animation:rainbow 1s infinite;
+    -o-animation:rainbow 1s infinite;
+    animation:rainbow 1s infinite;
+}
+@-webkit-keyframes rainbow {
+    0% {background-color: #aa7777;}
+    10% {background-color: #aa8770;}
+    20% {background-color: #aaaa77;}
+    30% {background-color: #80aa77;}
+    40% {background-color: #77aa77;}
+    50% {background-color: #77aa80;}
+    60% {background-color: #77aaaa;}
+    70% {background-color: #7780aa;}
+    80% {background-color: #7777aa;}
+    90% {background-color: #8770aa;}
+    100% {background-color: #aa7780;}
+}
+@-ms-keyframes rainbow {
+    0% {background-color: #aa7777;}
+    10% {background-color: #aa8770;}
+    20% {background-color: #aaaa77;}
+    30% {background-color: #80aa77;}
+    40% {background-color: #77aa77;}
+    50% {background-color: #77aa80;}
+    60% {background-color: #77aaaa;}
+    70% {background-color: #7780aa;}
+    80% {background-color: #7777aa;}
+    90% {background-color: #8770aa;}
+    100% {background-color: #aa7780;}
+}
+@-o-keyframes rainbow {
+    0% {background-color: #aa7777;}
+    10% {background-color: #aa8770;}
+    20% {background-color: #aaaa77;}
+    30% {background-color: #80aa77;}
+    40% {background-color: #77aa77;}
+    50% {background-color: #77aa80;}
+    60% {background-color: #77aaaa;}
+    70% {background-color: #7780aa;}
+    80% {background-color: #7777aa;}
+    90% {background-color: #8770aa;}
+    100% {background-color: #aa7780;}
+}
+@keyframes rainbow {
+    0% {background-color: #aa7777;}
+    10% {background-color: #aa8770;}
+    20% {background-color: #aaaa77;}
+    30% {background-color: #80aa77;}
+    40% {background-color: #77aa77;}
+    50% {background-color: #77aa80;}
+    60% {background-color: #77aaaa;}
+    70% {background-color: #7780aa;}
+    80% {background-color: #7777aa;}
+    90% {background-color: #8770aa;}
+    100% {background-color: #aa7780;}
+}

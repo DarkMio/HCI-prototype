@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="start">Start</a></div>
+                <a id="start" class="navbar-brand">Start</a></div>
             <div id="w0-collapse" class="collapse navbar-collapse">
                 <ul id="menuItems" class="navbar-nav navbar-right nav">
                 </ul>
@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    <div class="content">
+    <div id="mainMenu" class="content">
         <div class="container">
             <div class="site-index">
 
@@ -82,10 +82,10 @@
                         <div id="overview" class="col-md-7" hidden>
                             <h1>Willkommen Max Mustermann!</h1>
                             <blockquote>
-                                <p><a href="" id="SoSe2016" class="btn btn-default btn-block">Aktuelle Belegung (SoSe 2016)</a></p>
-                                <p><a href="" id="WiSe2016" class="btn btn-danger btn-block">Belegung (WiSe 2016/2017) ist noch nicht belegt!</a></p>
-                                <p><a href="" id="StudienDoku" class="btn btn-default btn-block">Aktuelle Studiendokumentation</a></p>
-                                <p><a href="" id="Studenplan" class="btn btn-default btn-block">Aktueller Stundenplan</a></p>
+                                <p><a href="" id="buttonSoSe2016" class="btn btn-default btn-block">Aktuelle Belegung (SoSe 2016)</a></p>
+                                <p><a href="" id="buttonWiSe2016" class="btn btn-danger btn-block">Belegung (WiSe 2016/2017) ist noch nicht belegt!</a></p>
+                                <p><a href="" id="buttonStudienDoku" class="btn btn-default btn-block">Aktuelle Studiendokumentation</a></p>
+                                <p><a href="" id="buttonPlanner" class="btn btn-default btn-block">Aktueller Stundenplan</a></p>
                             </blockquote>
                         </div>
                         <div id="forgot" class="col-md-6 col-md-offset-3" hidden>
@@ -122,13 +122,338 @@
                                 Sie werden innerhalb der nächsten 15 Minuten eine E-Mail an die angegebene Mail-Adresse erhalten. Sollten Sie diese E-Mail nicht erreichen, schauen Sie bitte zunächst in ihren Spam-Ordner.
                             </p>
                         </div>
-                        <div id="main" class="col-md-12" hidden>
+                        <!-- HERE ARE SOME BOYS MISSING -->
 
-                        </div>
                     </div>
                 </div>
             </div>
         </div> <!-- /container -->
+    </div>
+    <div id="plannerSoSe" class="content" hidden>
+        <div id="BelegungSoSe16" class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1>Stundenplan - Sommersemester 2016</h1>
+                    <blockquote>
+                        <p>
+                            Die ist ihr aktueller Stundenplan. Der Belegzeitraum war vom 15. März bis zum 31. März, daher ist die Umbelegung zu diesem Zeitpunkt nicht mehr möglich. Wenn Sie eine Änderung der Belegung durchführen möchten, müssen Sie dies über Ihren Dozenten regeln.
+                        </p>
+                    </blockquote>
+                    </div>
+            </div>
+            <div class="row">
+                <div id="main" class="col-md-12 ">
+                    <div class="col-md-1 col-lg-1"></div>
+                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+
+                        <!-- MONDAY -->
+                        <div class="panel price panel-red">
+                            <div class="panel-heading  text-center">
+                                <h3>MONTAG</h3>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Verteile Systeme
+                                        </div>
+                                        <div class="panel-footer">
+                                            14 tgl. - ungerade KW <span class="pull-right">D211</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Computergrafik II Übg.
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;<span class="pull-right">B223</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Verteilte Systeme Übg.
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;<span class="pull-right">D138</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Verteilte Systeme
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;<span class="pull-right">D136 / H5</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            &nbsp;
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                        <!-- TUESDAY -->
+                        <div class="panel price panel-blue">
+                            <div class="panel-heading arrow_box text-center">
+                                <h3>DIENSTAG</h3>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Human Computer Interaction Übg.
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;<span class="pull-right">D113</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Human Computer Interaction
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;<span class="pull-right">B401</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Computergrafik II
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;<span class="pull-right">B345</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            &nbsp;
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            &nbsp;
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                        <!-- WEDNESDAY -->
+                        <div class="panel price panel-green">
+                            <div class="panel-heading arrow_box text-center">
+                                <h3>MITTWOCH</h3>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            &nbsp;
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            &nbsp;
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Medienprojekt I Übg.
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;<span class="pull-right">B223</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Medienprojekt I Übg.
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;<span class="pull-right">B223</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Medienprojekt I
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;<span class="pull-right">B223</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /PRICE ITEM -->
+
+
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                        <!-- THURSDAY -->
+                        <div class="panel price panel-grey">
+                            <div class="panel-heading arrow_box text-center">
+                                <h3>DONNERSTAG</h3>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            &nbsp;
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            &nbsp;
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Grundl. Wissens. Arbeitens
+                                        </div>
+                                        <div class="panel-footer">
+                                            14 tgl. - gerade KW<span class="pull-right">B521</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Grundl. Wissens. Arbeitens Übg.
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;<span class="pull-right">B521</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            &nbsp;
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                        <!-- FREITAG -->
+                        <div class="panel price panel-white">
+                            <div class="panel-heading arrow_box text-center">
+                                <h3>FREITAG</h3>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            &nbsp;
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Software Engineering II
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;<span class="pull-right">B321</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Software Engineering II Übg.
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;<span class="pull-right">B321</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            &nbsp;
+                                        </div>
+                                        <div class="panel-footer">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            Bierinspektion
+                                        </div>
+                                        <div class="panel-footer beer">
+                                            &nbsp;<span class="pull-right">Eschenbräu</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /PRICE ITEM -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
