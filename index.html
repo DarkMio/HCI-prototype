@@ -1,0 +1,141 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prüfungen im Fachbereich 1</title>
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/custom.css" rel="stylesheet">
+    <script src="static/js/require.js" data-main="app.js"></script>
+
+</head>
+
+<body>
+<div class="wrap">
+    <nav id="w0" class="navbar-default navbar-fixed-top navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w0-collapse"><span
+                        class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="start">Start</a></div>
+            <div id="w0-collapse" class="collapse navbar-collapse">
+                <ul id="menuItems" class="navbar-nav navbar-right nav">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="top_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 vcenter">
+                    <a href="https://www.beuth-hochschule.de"><img src="static/img/beuth-logo-horizontal.png"></a>
+                </div>
+                <div class="col-sm-6 vcenter">
+                    <h1 id="siteTitle">Online Belegung - Login</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="site-index">
+
+                <div class="body-content">
+                    <div class="row">
+                        <div id="login" class="col-md-6 col-md-offset-3">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Bitte melden Sie sich an</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <form accept-charset="UTF-8" role="form">
+                                        <fieldset>
+                                            <div id="passwordWarning" class="form-group" hidden>
+                                                <p class="text-danger">Ihr Nutzername und / oder Passwort wurde falsch eingegeben</p>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="HRZ Name (s[Nummer])" name="username" type="text" id="inputUser">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="Passwort" name="password" type="password" value="" id="inputPassword">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input name="remember" type="checkbox" value="Remember Me"> Eingeloggt bleiben
+                                                </label>
+                                            </div>
+                                            <input class="btn btn-success btn-block" type="submit" value="Login" id="buttonLogin">
+                                        </fieldset>
+                                        <p></p>
+                                        <input class="btn btn-danger btn-block" type="submit" value="Passwort Vergessen" id="buttonForgot">
+
+                                        <div class="col-md-2 col-md-offset-8">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="overview" class="col-md-12" hidden>
+                            <p class="text-capitalize">
+                                Hello corld.
+                            </p>
+                        </div>
+                        <div id="forgot" class="col-md-6 col-md-offset-3" hidden>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Bitte melden Sie sich an</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <form accept-charset="UTF-8" role="form">
+                                        <fieldset>
+                                            <div id="userWarning" class="form-group" hidden>
+                                                <p class="text-danger">Ihre E-Mail / HRZ-Kombination ist uns nicht bekannt.</p>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="HRZ Name (s[Nummer])" name="username" type="text" id="inputForgotUser">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="E-Mail Adresse" name="email" type="email" value="" id="inputForgotEmail">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                </label>
+                                            </div>
+                                            <input class="btn btn-danger btn-block" type="submit" value="Passwort Vergessen" id="buttonForgotPassword">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="emailSent" class="col-md-12" hidden>
+                            <h3>Wir haben Ihnen eine E-Mail zugesandt!</h3>
+                            <p>
+                                Sie werden innerhalb der nächsten 15 Minuten eine E-Mail an die angegebene Mail-Adresse erhalten. Sollten Sie diese E-Mail nicht erreichen, schauen Sie bitte zunächst in ihren Spam-Ordner.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /container -->
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="pull-left">© Beuth Hochschule für Technik Berlin 2016</p>
+            <p class="pull-right"><a href="/impressum">Hilfe / Impressum / Datenschutz</a></p>
+
+        </div>
+    </footer>
+    <!--
+        <script src="static/js/jquery.js"></script>
+        <script src="static/js/bootstrap.js"></script>
+    -->
+
+</div>
+</body>
+</html>
