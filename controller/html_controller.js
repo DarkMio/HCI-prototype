@@ -28,7 +28,7 @@ define(["jquery"],
                 if(formValidateLogin($("#inputUser"), $("#inputPassword"))) {
                     _cont.loggedIn = true;
                     buildNavigation();
-                    $("#siteTitle").text("Online Belegung");
+                    setTitle("");
                     $("#passwordWarning").hide();
                     $("#login").hide();
                     $("#overview").show();
@@ -113,6 +113,10 @@ define(["jquery"],
                 a = a.val();
                 b = b.val();
                 return a && b;
+            };
+
+            var setTitle = function(text) {
+                $("#siteTitle").text("Online Belegung" + text);
             };
             
             var buildNavigation = function() {
