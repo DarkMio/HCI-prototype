@@ -10,7 +10,6 @@ define(["jquery"],
             this.loggedIn = false;
             var _cont = this;
 
-            console.log("HTML Controller initialized.");
             // subsribe to all link clicks.
             $("a").on('click', function(e) {
                 e.preventDefault();
@@ -37,7 +36,7 @@ define(["jquery"],
             });
 
             $("#buttonForgot").click(function(e) {
-                
+
                 e.preventDefault();
                 $("#login").hide();
                 $("#forgot").show();
@@ -90,7 +89,7 @@ define(["jquery"],
                 }
 
                 console.log("BUILDING NAVIGATION");
-                var elements = ["Mein Konto", "Belegung", "Hilfe", "Logout"];
+                var elements = [["Mein Konto", "account"], ["Belegung", "assignment"], ["Hilfe", "help"], ["Logout", "logout"]];
                 var menu = $("#menuItems");
 
                 for(var i = 0; i < elements.length; i++) {
@@ -98,11 +97,18 @@ define(["jquery"],
 
                     menu.append(
                         $("<li>").append(
-                            $("<a>").attr('href', text).text(text)
+                            $("<a>").attr('id', text[1]).attr('href', '').text(text[0])
                         )
                     )
                 }
 
+                // And now build all event listeners to the newly generated DOM objects.
+                $("#logout").click(function(e) {
+                    e.preventDefault();
+                    console.log("LOGOUT");
+                });
+
+                console.log("HTML Controller initialized.");
                 _cont.elementNavigation = true;
             };
         };
