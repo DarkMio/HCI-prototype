@@ -132,6 +132,7 @@ define(["jquery"],
 
                 // And now build all event listeners to the newly generated DOM objects.
                 $("#account").click(function(e) {
+                    e.preventDefault();
                     reset();
                 });
 
