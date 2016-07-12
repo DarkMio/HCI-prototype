@@ -76,6 +76,8 @@ define(["jquery"],
 
 
             var reset = function() {
+                var overview = $("#overview").hide().show();
+                var login = $("#login").show().hide();
 
                 { // this is the block where we throw all dynamic structures in
                   // and disable everything in states we had before.
@@ -89,19 +91,20 @@ define(["jquery"],
                     $("#forgot").hide();
                     $("#emailSent").hide();
                     // eat the navigation
+                    $("#menuItems").empty();
                 }
-                
+
                 if(_cont.loggedIn) {
                     // if you're logged in, you see this page coming up.
-                    $("#login").hide();
-                    $("#overview").show();
+                    buildNavigation();
+
+                    login.hide();
+                    overview.show();
 
                 } else {
                     // and if you're not logged in, we present you this.
-                    $("#menuItems").empty();
-
-                    $("#overview").hide();
-                    $("#login").show();
+                    overview.hide();
+                    login.show();
                 }
             };
             
