@@ -18,6 +18,10 @@ define(["jquery"],
             $("#start").click(function(e) {
                 reset();
             });
+
+            $("#logo").click(function(e) {
+                reset();
+            });
             
             $("#buttonLogin").click(function(e) {
                 e.preventDefault();
@@ -64,6 +68,12 @@ define(["jquery"],
                 $("#plannerSoSe").show();
             });
 
+            $("#buttonStudienDoku").click(function(e) {
+                e.preventDefault();
+                $("#overview").hide();
+                $("#documentation").show();
+            });
+
 
             var reset = function() {
 
@@ -71,6 +81,7 @@ define(["jquery"],
                   // and disable everything in states we had before.
                     $("#mainMenu").show();
                     $("#plannerSoSe").hide();
+                    $("#documentation").hide();
 
                     $("#userWarning").hide();
                     $("#passwordWarning").hide();
