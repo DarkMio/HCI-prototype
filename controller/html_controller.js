@@ -131,6 +131,10 @@ define(["jquery"],
                 }
 
                 // And now build all event listeners to the newly generated DOM objects.
+                $("#account").click(function(e) {
+                    reset();
+                });
+
                 $("#logout").click(function(e) {
                     e.preventDefault();
                     _cont.loggedIn = false;
