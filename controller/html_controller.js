@@ -60,6 +60,8 @@ define(["jquery"],
                   // and disable everything in states we had before.
                     $("#userWarning").hide();
                     $("#passwordWarning").hide();
+
+                    // eat the navigation
                 }
 
 
@@ -68,6 +70,8 @@ define(["jquery"],
 
                 } else {
                     // and if you're not logged in, we present you this.
+                    $("#menuItems").empty();
+
                     $("#overview").hide();
                     $("#forgot").hide();
                     $("#emailSent").hide();
@@ -105,7 +109,8 @@ define(["jquery"],
                 // And now build all event listeners to the newly generated DOM objects.
                 $("#logout").click(function(e) {
                     e.preventDefault();
-                    console.log("LOGOUT");
+                    _cont.loggedIn = false;
+                    reset();
                 });
 
                 console.log("HTML Controller initialized.");
