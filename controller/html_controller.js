@@ -37,6 +37,7 @@ define(["jquery"],
             });
 
             $("#buttonForgot").click(function(e) {
+                
                 e.preventDefault();
                 $("#login").hide();
                 $("#forgot").show();
