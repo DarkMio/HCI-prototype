@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Online Belegung - Beuth Hochschule für Technik Berlin</title>
     <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/bootstrap-switch.css" rel="stylesheet">
     <link href="static/css/custom.css" rel="stylesheet">
     <script src="static/js/require.js" data-main="app.js"></script>
 
@@ -20,11 +21,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span></button>
-                <a id="start" class="navbar-brand">Start</a></div>
+                <a id="start" class="navbar-brand">Start</a>
+            </div>
             <div id="w0-collapse" class="collapse navbar-collapse">
                 <ul id="menuItems" class="navbar-nav navbar-right nav">
                 </ul>
             </div>
+
         </div>
     </nav>
     <div class="top_content">
@@ -81,9 +84,14 @@
                         </div>
                         <div id="overview" class="col-md-7" hidden>
                             <h1>Willkommen Max Mustermann!</h1>
+                            <h4>Wintersemester 2016 / 17</h4>
+                            <blockquote>
+                                <p><a href="" id="buttonWiSe2016" class="btn btn-danger btn-block">Belegung (WiSe 2016/2017) ist noch nicht belegt!</a></p>
+                            </blockquote>
+
+                            <h4>Sommersemester 2016</h4>
                             <blockquote>
                                 <p><a href="" id="buttonSoSe2016" class="btn btn-default btn-block">Aktuelle Belegung (SoSe 2016)</a></p>
-                                <p><a href="" id="buttonWiSe2016" class="btn btn-danger btn-block">Belegung (WiSe 2016/2017) ist noch nicht belegt!</a></p>
                                 <p><a href="" id="buttonStudienDoku" class="btn btn-default btn-block">Aktuelle Studiendokumentation</a></p>
                                 <p><a href="" id="buttonPlanner" class="btn btn-default btn-block">Aktueller Stundenplan</a></p>
                             </blockquote>
@@ -214,6 +222,20 @@
                             </table>
                         </div>
 
+
+                        <div id="academic" class="col-md-7" hidden>
+                            <h3>Willkommen Ilse Schmiedecke!</h3>
+                            <h4>Sommersemester 2016</h4>
+                            <blockquote>
+                                <p><a href="" id="buttonAssignmentHCI" class="btn btn-default btn-block">Aktuelle Belegung HCI (Plansemester 4)</a></p>
+                                <p><a href="" id="buttonAssignmentSE" class="btn btn-default btn-block">Aktuelle Belegung SE2 (Plansemester 4)</a></p>
+                                <p><a href="" id="buttonStundenplanAcademic" class="btn btn-default btn-block">Stundenplan, Raumbelegung</a></p>
+                            </blockquote>
+                            <h4>Wintersemester 2016</h4>
+                            <blockquote>
+                                <p><a href="" id="buttonAssignmentProg"  class="btn btn-default btn-block">Aktuelle Belegung Prog I (Plansemester 1)</a></p>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </div>

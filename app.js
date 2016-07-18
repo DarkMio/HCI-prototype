@@ -18,12 +18,14 @@ requirejs.config({
             'http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min',
             //If the load via CDN fails, load locally
             'static/js/jquery'],
+        "switch": 'static/js/bootstrap-switch',
         "bootstrap" : "static/js/bootstrap",
         "htmlController": "controller/html_controller"
     },
     shim: {
         bootstrap: {deps: ['jquery']},
-        htmlController: {deps: ['jquery']}
+        htmlController: {deps: ['jquery']},
+        switch: {deps: ['jquery']}
     }
 
 });
