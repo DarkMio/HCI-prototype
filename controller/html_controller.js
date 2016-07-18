@@ -115,7 +115,20 @@ define(["jquery", "switch"],
                 $.each(table, function(index, value) {
                     $(index)
                         .click(function(e) {
-                            $(this).addClass("panel-warning");
+                            var x = $(this);
+                            var found = false;
+                            var classes = x.attr('class').split(" ");
+                            for(var i = 0; i < classes.length; i++) {
+                                if(classes[i] == "panel-warning") {
+                                    found = true;
+                                    x.removeClass("panel-warning");
+                                    break;
+                                }
+                            }
+
+                            if(!found) {
+                                $(this).addClass("panel-warning");
+                            }
                         })
                         .hover(function(e) {
                             $(this).addClass("panel-success");

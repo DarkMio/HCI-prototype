@@ -15,7 +15,7 @@ requirejs.config({
         // jquery library
         "jquery": [
             // try content delivery network location first
-            'http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min',
+            'https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min',
             //If the load via CDN fails, load locally
             'static/js/jquery'],
         "switch": 'static/js/bootstrap-switch',
