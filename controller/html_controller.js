@@ -8,7 +8,7 @@ define(["jquery", "switch"],
         var HtmlController = function() {
             this.elementNavigation = false;
             this.loggedIn = false;
-            this.academic = true;
+            this.academic = false;
             var _cont = this;
 
             // subsribe to all link clicks and disable them (so we don't move somewhere else
@@ -77,6 +77,75 @@ define(["jquery", "switch"],
                 $("#documentation").show();
             });
 
+            $("#buttonWiSe2016").click(function(e) {
+                e.preventDefault();
+                $("#mainMenu").hide();
+                $("#plannerWiSe").show();
+            });
+
+            // This is an entire event listener batch for the plannerWiSe
+            {
+                // Lets build a fine set of listeners to each other
+
+                var table = {
+                    "#courseEff01": {enable: ["#courseEff02"]},
+                    "#courseEff02": {enable: ["#courseEff01"]},
+                    "#courseMME01": {enable: ["#courseMME02", "#courseMME03"]},
+                    "#courseMME02": {enable: ["#courseMME01"], disable: ["#courseMME03"]},
+                    "#courseMME03": {enable: ["#courseMME01"], disable: ["#courseMME02"]},
+                    "#courseAngular01": {enable: ["#courseAngular02"]},
+                    "#courseAngular02": {enable: ["#courseAngular01"]},
+                    "#courseMP01": {enable: ["#courseMP02", "#courseMP03", "#courseMP04", "#courseMP05", "#courseMP06"]},
+                    "#courseMP02": {enable: ["#courseMP01", "#courseMP02", "#courseMP03", "#courseMP04", "#courseMP05", "#courseMP06"]},
+                    "#courseMP03": {enable: ["#courseMP01", "#courseMP02", "#courseMP03"], disable: ["#courseMP04", "#courseMP05", "#courseMP06"]},
+                    "#courseMP04": {enable: ["#courseMP01", "#courseMP02", "#courseMP03"], disable: ["#courseMP03", "#courseMP05", "#courseMP06"]},
+                    "#courseMP05": {enable: ["#courseMP01", "#courseMP02", "#courseMP03"], disable: ["#courseMP04", "#courseMP03", "#courseMP06"]},
+                    "#courseMP06": {enable: ["#courseMP01", "#courseMP02", "#courseMP03"], disable: ["#courseMP04", "#courseMP05", "#courseMP03"]},
+                    "#courseBWL01": {enable: ["#courseBWL02"]},
+                    "#courseBWL02": {enable: ["#courseBWL01"]},
+                    "#courseQPM01": {enable: ["#courseQPM02", "#courseQPM03"]},
+                    "#courseQPM02": {enable: ["#courseQPM01"], disable: ["#courseQPM03"]},
+                    "#courseQPM03": {enable: ["#courseQPM01"], disable: ["#courseQPM02"]},
+                    "#courseIOS01": {enable: ["#courseIOS02"]},
+                    "#courseIOS02": {enable: ["#courseIOS01"]},
+                    "#courseMaya01": {enable: ["#courseMaya02"]},
+                    "#courseMaya02": {enable: ["#courseMaya01"]},
+                };
+
+                $.each(table, function(index, value) {
+                    $(index)
+                        .click(function(e) {
+                            $(this).addClass("panel-warning");
+                        })
+                        .hover(function(e) {
+                            $(this).addClass("panel-success");
+                            $.each(value.enable, function(key, val) {
+                                $(val).addClass("panel-success");
+                            });
+                            $.each(value.disable, function(key, val) {
+                                $(val).addClass("panel-danger");
+                            })
+                        }, function(e) {
+                            $(this).removeClass("panel-success");
+                            $.each(value.enable, function(key, val) {
+                                $(val).removeClass("panel-success");
+                            });
+                            $.each(value.disable, function(key, val) {
+                                $(val).removeClass("panel-danger")
+                            })
+                        })
+                });
+
+                $("#plannerReset").click(function(e) {
+                    $('.panel-warning').removeClass('panel-warning');
+                });
+
+                $("#plannerBooking").click(function(e) {
+                    $('.panel-warning').removeClass('panel-warning').addClass('panel-success');
+                    setTimeout(function() {$("#plannerSearch").fadeOut(); $("#plannerButtons").fadeOut(); $("#plannerSuccess").fadeIn();}, 4500);
+                })
+            }
+
 
             var reset = function() {
                 var overview = $("#overview").hide().show();
@@ -107,7 +176,6 @@ define(["jquery", "switch"],
                     overview.show();
 
                 } else if (_cont.loggedIn && _cont.academic){
-                    console.log("this is kinda funny.");
                     buildNavigation();
                     login.hide();
                     overview.hide();

@@ -56,9 +56,8 @@ define(["jquery", "htmlController"],
             var cont = new HtmlController();
             // $("#siteTitle").text("Hello world!");
 
+            console.log(cont);
 
         })); // $(document).ready()
 
-    })); // define module
-        
-
+})); // define module
