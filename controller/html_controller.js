@@ -83,6 +83,35 @@ define(["jquery", "switch"],
                 $("#plannerWiSe").show();
             });
 
+            $("#linkOrderHCI").click(function(e) {
+                e.preventDefault();
+                $("#linkSemesterOrderHCI").attr('href', '').removeClass('text-muted');
+                $("#linkOrderHCI").removeAttr('href').addClass('text-muted');
+                var order = $("#order");
+                var semOrder = $("#semesterOrder");
+
+                order.show();
+                semOrder.hide();
+            });
+
+            $("#linkSemesterOrderHCI").click(function(e) {
+                e.preventDefault();
+
+                $("#linkSemesterOrderHCI").removeAttr('href').addClass('text-muted');
+                $("#linkOrderHCI").attr('href', '').removeClass('text-muted');
+                var order = $("#order");
+                var semOrder = $("#semesterOrder");
+
+                order.hide();
+                semOrder.show();
+            });
+
+            $("#buttonAssignmentHCI").click(function(e) {
+                e.preventDefault();
+                $("#academic").hide();
+                $("#academicBookingHCI").show();
+            });
+
             // This is an entire event listener batch for the plannerWiSe
             {
                 // Lets build a fine set of listeners to each other
@@ -169,6 +198,7 @@ define(["jquery", "switch"],
                     // and disable everything in states we had before.
                     $("#mainMenu").show();
                     $("#plannerSoSe").hide();
+                    $("#plannerWiSe").hide();
                     $("#documentation").hide();
 
                     $("#userWarning").hide();
@@ -178,6 +208,8 @@ define(["jquery", "switch"],
                     $("#emailSent").hide();
                     // eat the navigation
                     // $("#menuItems").empty();
+
+                    $("#academicBookingHCI").hide();
                 }
 
                 if (_cont.loggedIn && !_cont.academic) {
