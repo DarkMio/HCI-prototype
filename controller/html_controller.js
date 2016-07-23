@@ -112,6 +112,12 @@ define(["jquery", "switch"],
                 $("#academicBookingHCI").show();
             });
 
+            $("#buttonStundenplanAcademic").click(function(e) {
+                e.preventDefault();
+                $("#plannerAcademic").show();
+                $("#mainMenu").hide();
+            });
+
             // This is an entire event listener batch for the plannerWiSe
             {
                 // Lets build a fine set of listeners to each other
@@ -210,6 +216,7 @@ define(["jquery", "switch"],
                     // $("#menuItems").empty();
 
                     $("#academicBookingHCI").hide();
+                    $("#plannerAcademic").hide();
                 }
 
                 if (_cont.loggedIn && !_cont.academic) {
