@@ -57,24 +57,30 @@
                                     <form accept-charset="UTF-8" role="form" method="post">
                                         <fieldset>
                                             <div id="passwordWarning" class="form-group" hidden>
-                                                <p class="text-danger">Ihr Nutzername und / oder Passwort wurde falsch eingegeben</p>
+                                                <p class="text-danger">Ihr Nutzername und / oder Passwort wurde falsch
+                                                    eingegeben</p>
                                             </div>
 
                                             <div class="form-group">
-                                                <input class="form-control" placeholder="HRZ Name (s[Nummer])" name="username" type="text" id="inputUser">
+                                                <input class="form-control" placeholder="HRZ Name (s[Nummer])"
+                                                       name="username" type="text" id="inputUser">
                                             </div>
                                             <div class="form-group">
-                                                <input class="form-control" placeholder="Passwort" name="password" type="password" value="" id="inputPassword">
+                                                <input class="form-control" placeholder="Passwort" name="password"
+                                                       type="password" value="" id="inputPassword">
                                             </div>
                                             <div class="checkbox">
                                                 <label>
-                                                    <input name="remember" type="checkbox" value="Remember Me"> Eingeloggt bleiben
+                                                    <input name="remember" type="checkbox" value="Remember Me">
+                                                    Eingeloggt bleiben
                                                 </label>
                                             </div>
-                                            <input class="btn btn-success btn-block" type="submit" value="Login" id="buttonLogin">
+                                            <input class="btn btn-success btn-block" type="submit" value="Login"
+                                                   id="buttonLogin">
                                         </fieldset>
                                         <p></p>
-                                        <input class="btn btn-danger btn-block" type="submit" value="Passwort Vergessen" id="buttonForgot">
+                                        <input class="btn btn-danger btn-block" type="submit" value="Passwort Vergessen"
+                                               id="buttonForgot">
 
                                         <div class="col-md-2 col-md-offset-8">
                                         </div>
@@ -86,14 +92,18 @@
                             <h1>Willkommen Max Mustermann!</h1>
                             <h4>Wintersemester 2016 / 17</h4>
                             <blockquote>
-                                <p><a href="" id="buttonWiSe2016" class="btn btn-danger btn-block">Belegung (WiSe 2016/2017) ist noch nicht belegt!</a></p>
+                                <p><a href="" id="buttonWiSe2016" class="btn btn-danger btn-block">Belegung (WiSe
+                                    2016/2017) ist noch nicht belegt!</a></p>
                             </blockquote>
 
                             <h4>Sommersemester 2016</h4>
                             <blockquote>
-                                <p><a href="" id="buttonSoSe2016" class="btn btn-default btn-block">Aktuelle Belegung (SoSe 2016)</a></p>
-                                <p><a href="" id="buttonStudienDoku" class="btn btn-default btn-block">Aktuelle Studiendokumentation</a></p>
-                                <p><a href="" id="buttonPlanner" class="btn btn-default btn-block">Aktueller Stundenplan</a></p>
+                                <p><a href="" id="buttonSoSe2016" class="btn btn-default btn-block">Aktuelle Belegung
+                                    (SoSe 2016)</a></p>
+                                <p><a href="" id="buttonStudienDoku" class="btn btn-default btn-block">Aktuelle
+                                    Studiendokumentation</a></p>
+                                <p><a href="" id="buttonPlanner" class="btn btn-default btn-block">Aktueller
+                                    Stundenplan</a></p>
                             </blockquote>
                         </div>
                         <div id="forgot" class="col-md-6 col-md-offset-3" hidden>
@@ -105,20 +115,24 @@
                                     <form accept-charset="UTF-8" role="form">
                                         <fieldset>
                                             <div id="userWarning" class="form-group" hidden>
-                                                <p class="text-danger">Ihre E-Mail / HRZ-Kombination ist uns nicht bekannt.</p>
+                                                <p class="text-danger">Ihre E-Mail / HRZ-Kombination ist uns nicht
+                                                    bekannt.</p>
                                             </div>
 
                                             <div class="form-group">
-                                                <input class="form-control" placeholder="HRZ Name (s[Nummer])" name="username" type="text" id="inputForgotUser">
+                                                <input class="form-control" placeholder="HRZ Name (s[Nummer])"
+                                                       name="username" type="text" id="inputForgotUser">
                                             </div>
                                             <div class="form-group">
-                                                <input class="form-control" placeholder="E-Mail Adresse" name="email" type="email" value="" id="inputForgotEmail">
+                                                <input class="form-control" placeholder="E-Mail Adresse" name="email"
+                                                       type="email" value="" id="inputForgotEmail">
                                             </div>
                                             <div class="checkbox">
                                                 <label>
                                                 </label>
                                             </div>
-                                            <input class="btn btn-danger btn-block" type="submit" value="Passwort Vergessen" id="buttonForgotPassword">
+                                            <input class="btn btn-danger btn-block" type="submit"
+                                                   value="Passwort Vergessen" id="buttonForgotPassword">
                                         </fieldset>
                                     </form>
                                 </div>
@@ -127,7 +141,9 @@
                         <div id="emailSent" class="col-md-12" hidden>
                             <h3>Wir haben Ihnen eine E-Mail zugesandt!</h3>
                             <p>
-                                Sie werden innerhalb der nächsten 15 Minuten eine E-Mail an die angegebene Mail-Adresse erhalten. Sollten Sie diese E-Mail nicht erreichen, schauen Sie bitte zunächst in ihren Spam-Ordner.
+                                Sie werden innerhalb der nächsten 15 Minuten eine E-Mail an die angegebene Mail-Adresse
+                                erhalten. Sollten Sie diese E-Mail nicht erreichen, schauen Sie bitte zunächst in ihren
+                                Spam-Ordner.
                             </p>
                         </div>
                         <!-- HERE ARE SOME BOYS MISSING -->
@@ -135,89 +151,89 @@
                             <h3>Studiendokumentation, Stand 04. Mai 2016</h3>
                             <table class="table table-striped table-hover">
                                 <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Modul / Einheit</th>
-                                        <th>Credits</th>
-                                        <th>Belegung</th>
-                                        <th>Note</th>
-                                        <th>Lehrkraft</th>
-                                        <th>Versuch</th>
-                                    </tr>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Modul / Einheit</th>
+                                    <th>Credits</th>
+                                    <th>Belegung</th>
+                                    <th>Note</th>
+                                    <th>Lehrkraft</th>
+                                    <th>Versuch</th>
+                                </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="info">
-                                        <td></td>
-                                        <td>Mathematik I</td>
-                                        <td>5</td>
-                                        <td></td>
-                                        <td>1,70</td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>143084</td>
-                                        <td>Mathematik I</td>
-                                        <td></td>
-                                        <td>WS 14/15</td>
-                                        <td>1,7</td>
-                                        <td>Müller</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>140365</td>
-                                        <td>Mathematik I Übg.</td>
-                                        <td></td>
-                                        <td>WS 14/15</td>
-                                        <td>m. E.</td>
-                                        <td>Müller</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="info">
-                                        <td></td>
-                                        <td>Formale Grundl. d. Informatik</td>
-                                        <td>5</td>
-                                        <td></td>
-                                        <td>1,70</td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>143002</td>
-                                        <td>Formale Grundl. d. Informatik</td>
-                                        <td></td>
-                                        <td>WS 14/15</td>
-                                        <td>1,7</td>
-                                        <td>Ripphausen-Lipa</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="info">
-                                        <td></td>
-                                        <td>Mediendesign I</td>
-                                        <td>5</td>
-                                        <td></td>
-                                        <td>1,70</td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>143003</td>
-                                        <td>Mediendesign I</td>
-                                        <td></td>
-                                        <td>WS 14/15</td>
-                                        <td>1,3</td>
-                                        <td>Müller</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>143036</td>
-                                        <td>Mediendesign I</td>
-                                        <td></td>
-                                        <td>WS 14/15</td>
-                                        <td>m. E.</td>
-                                        <td>Müller</td>
-                                        <td></td>
-                                    </tr>
+                                <tr class="info">
+                                    <td></td>
+                                    <td>Mathematik I</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td>1,70</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>143084</td>
+                                    <td>Mathematik I</td>
+                                    <td></td>
+                                    <td>WS 14/15</td>
+                                    <td>1,7</td>
+                                    <td>Müller</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>140365</td>
+                                    <td>Mathematik I Übg.</td>
+                                    <td></td>
+                                    <td>WS 14/15</td>
+                                    <td>m. E.</td>
+                                    <td>Müller</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="info">
+                                    <td></td>
+                                    <td>Formale Grundl. d. Informatik</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td>1,70</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>143002</td>
+                                    <td>Formale Grundl. d. Informatik</td>
+                                    <td></td>
+                                    <td>WS 14/15</td>
+                                    <td>1,7</td>
+                                    <td>Ripphausen-Lipa</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="info">
+                                    <td></td>
+                                    <td>Mediendesign I</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td>1,70</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>143003</td>
+                                    <td>Mediendesign I</td>
+                                    <td></td>
+                                    <td>WS 14/15</td>
+                                    <td>1,3</td>
+                                    <td>Müller</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>143036</td>
+                                    <td>Mediendesign I</td>
+                                    <td></td>
+                                    <td>WS 14/15</td>
+                                    <td>m. E.</td>
+                                    <td>Müller</td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -225,19 +241,25 @@
                             <h1>Willkommen Ilse Schmiedecke!</h1>
                             <h4>Sommersemester 2016</h4>
                             <blockquote>
-                                <p><a href="" id="buttonAssignmentHCI" class="btn btn-default btn-block">Aktuelle Belegung HCI (Plansemester 4)</a></p>
-                                <p><a href="" id="buttonAssignmentSE" class="btn btn-default btn-block">Aktuelle Belegung SE2 (Plansemester 4)</a></p>
-                                <p><a href="" id="buttonStundenplanAcademic" class="btn btn-default btn-block">Stundenplan, Raumbelegung</a></p>
+                                <p><a href="" id="buttonAssignmentHCI" class="btn btn-default btn-block">Aktuelle
+                                    Belegung HCI (Plansemester 4)</a></p>
+                                <p><a href="" id="buttonAssignmentSE" class="btn btn-default btn-block">Aktuelle
+                                    Belegung SE2 (Plansemester 4)</a></p>
+                                <p><a href="" id="buttonStundenplanAcademic" class="btn btn-default btn-block">Stundenplan,
+                                    Raumbelegung</a></p>
                             </blockquote>
                             <h4>Wintersemester 2016</h4>
                             <blockquote>
-                                <p><a href="" id="buttonAssignmentProg"  class="btn btn-default btn-block">...</a></p>
+                                <p><a href="" id="buttonAssignmentProg" class="btn btn-default btn-block">...</a></p>
                             </blockquote>
                         </div>
-                        <div id="academicBookingHCI" class="col-md-12" hidden >
-                            <h3>Belegung HCI <span class="pull-right">SoSe 16, Auslastung: <span class="text-danger">48/44</span></span></h3>
+                        <div id="academicBookingHCI" class="col-md-12" hidden>
+                            <h3>Belegung HCI <span class="pull-right">SoSe 16, Auslastung: <span class="text-danger">48/44</span></span>
+                            </h3>
                             <br>
-                            <span class="small pull-right">Sortierung nach: <a href="" id="linkOrderHCI" class="bold text-muted">Reihenfolge</a> | <a id="linkSemesterOrderHCI">Semester + Reihenfolge</a></span>
+                            <span class="small pull-right">Sortierung nach: <a href="" id="linkOrderHCI"
+                                                                               class="bold text-muted">Reihenfolge</a> | <a
+                                    id="linkSemesterOrderHCI">Semester + Reihenfolge</a></span>
                             <table class="table table-striped table-hover">
                                 <thead>
                                 <tr>
@@ -251,152 +273,152 @@
                                 </tr>
                                 </thead>
                                 <tbody id="order">
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Wendland</td>
-                                        <td>Fabian</td>
-                                        <td>762452</td>
-                                        <td>4</td>
-                                        <td>1,00</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Nieling</td>
-                                        <td>Sebastian</td>
-                                        <td>825423</td>
-                                        <td>4</td>
-                                        <td>1,00</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr class="danger">
-                                        <td>3</td>
-                                        <td>Gottlieb</td>
-                                        <td>David</td>
-                                        <td>805864</td>
-                                        <td>5</td>
-                                        <td>-</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Stumpe</td>
-                                        <td>Christoph</td>
-                                        <td>810025</td>
-                                        <td>4</td>
-                                        <td>1,00</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Gärtner</td>
-                                        <td>Phillip</td>
-                                        <td>820664</td>
-                                        <td>4</td>
-                                        <td>2,30</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Engel</td>
-                                        <td>Alexander</td>
-                                        <td>819524</td>
-                                        <td>6</td>
-                                        <td>1,70</td>
-                                        <td>2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>Schaefer</td>
-                                        <td>Susanne</td>
-                                        <td>809524</td>
-                                        <td>4</td>
-                                        <td>2,00</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr class="warning">
-                                        <td>8</td>
-                                        <td>Domenik</td>
-                                        <td>Fried</td>
-                                        <td>82688</td>
-                                        <td>4</td>
-                                        <td>5,00</td>
-                                        <td>1</td>
-                                    </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Wendland</td>
+                                    <td>Fabian</td>
+                                    <td>762452</td>
+                                    <td>4</td>
+                                    <td>1,00</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Nieling</td>
+                                    <td>Sebastian</td>
+                                    <td>825423</td>
+                                    <td>4</td>
+                                    <td>1,00</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>3</td>
+                                    <td>Gottlieb</td>
+                                    <td>David</td>
+                                    <td>805864</td>
+                                    <td>5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Stumpe</td>
+                                    <td>Christoph</td>
+                                    <td>810025</td>
+                                    <td>4</td>
+                                    <td>1,00</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Gärtner</td>
+                                    <td>Phillip</td>
+                                    <td>820664</td>
+                                    <td>4</td>
+                                    <td>2,30</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Engel</td>
+                                    <td>Alexander</td>
+                                    <td>819524</td>
+                                    <td>6</td>
+                                    <td>1,70</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Schaefer</td>
+                                    <td>Susanne</td>
+                                    <td>809524</td>
+                                    <td>4</td>
+                                    <td>2,00</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>8</td>
+                                    <td>Domenik</td>
+                                    <td>Fried</td>
+                                    <td>82688</td>
+                                    <td>4</td>
+                                    <td>5,00</td>
+                                    <td>1</td>
+                                </tr>
                                 </tbody>
                                 <tbody id="semesterOrder" hidden>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Wendland</td>
-                                        <td>Fabian</td>
-                                        <td>762452</td>
-                                        <td>4</td>
-                                        <td>1,00</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Nieling</td>
-                                        <td>Sebastian</td>
-                                        <td>825423</td>
-                                        <td>4</td>
-                                        <td>1,00</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Stumpe</td>
-                                        <td>Christoph</td>
-                                        <td>810025</td>
-                                        <td>4</td>
-                                        <td>1,00</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Gärtner</td>
-                                        <td>Phillip</td>
-                                        <td>820664</td>
-                                        <td>4</td>
-                                        <td>2,30</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Schaefer</td>
-                                        <td>Susanne</td>
-                                        <td>809524</td>
-                                        <td>4</td>
-                                        <td>2,00</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr class="warning">
-                                        <td>6</td>
-                                        <td>Domenik</td>
-                                        <td>Fried</td>
-                                        <td>82688</td>
-                                        <td>4</td>
-                                        <td>5,00</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr class="danger">
-                                        <td>7</td>
-                                        <td>Gottlieb</td>
-                                        <td>David</td>
-                                        <td>805864</td>
-                                        <td>5</td>
-                                        <td>-</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Engel</td>
-                                        <td>Alexander</td>
-                                        <td>819524</td>
-                                        <td>6</td>
-                                        <td>1,70</td>
-                                        <td>2</td>
-                                    </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Wendland</td>
+                                    <td>Fabian</td>
+                                    <td>762452</td>
+                                    <td>4</td>
+                                    <td>1,00</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Nieling</td>
+                                    <td>Sebastian</td>
+                                    <td>825423</td>
+                                    <td>4</td>
+                                    <td>1,00</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Stumpe</td>
+                                    <td>Christoph</td>
+                                    <td>810025</td>
+                                    <td>4</td>
+                                    <td>1,00</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Gärtner</td>
+                                    <td>Phillip</td>
+                                    <td>820664</td>
+                                    <td>4</td>
+                                    <td>2,30</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Schaefer</td>
+                                    <td>Susanne</td>
+                                    <td>809524</td>
+                                    <td>4</td>
+                                    <td>2,00</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>6</td>
+                                    <td>Domenik</td>
+                                    <td>Fried</td>
+                                    <td>82688</td>
+                                    <td>4</td>
+                                    <td>5,00</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>7</td>
+                                    <td>Gottlieb</td>
+                                    <td>David</td>
+                                    <td>805864</td>
+                                    <td>5</td>
+                                    <td>-</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Engel</td>
+                                    <td>Alexander</td>
+                                    <td>819524</td>
+                                    <td>6</td>
+                                    <td>1,70</td>
+                                    <td>2</td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -414,10 +436,12 @@
                     <h1>Stundenplan - Sommersemester 2016</h1>
                     <blockquote>
                         <p>
-                            Die ist ihr aktueller Stundenplan. Der Belegzeitraum war vom 15. März bis zum 31. März, daher ist die Umbelegung zu diesem Zeitpunkt nicht mehr möglich. Wenn Sie eine Änderung der Belegung durchführen möchten, müssen Sie dies über Ihren Dozenten regeln.
+                            Die ist ihr aktueller Stundenplan. Der Belegzeitraum war vom 15. März bis zum 31. März,
+                            daher ist die Umbelegung zu diesem Zeitpunkt nicht mehr möglich. Wenn Sie eine Änderung der
+                            Belegung durchführen möchten, müssen Sie dies über Ihren Dozenten regeln.
                         </p>
                     </blockquote>
-                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-12 ">
@@ -737,7 +761,7 @@
         <!-- Planner for Summer Semester -->
         <div class="container-fluid">
             <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-10 col-md-offset-1">
                     <h1>Belegung - Wintersemester 2016 / 17</h1>
                     <blockquote>
                         <div id="plannerSearch">
